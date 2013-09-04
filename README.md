@@ -1,3 +1,4 @@
 1309-MDD
 ========
-I have created this Repository for my Mobile Device Development class
+I setup the Github file by simply creating a githud account and then verifying it thru e-mail. 
+Then I just needed to create a repository and test.
