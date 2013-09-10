@@ -1,0 +1,64 @@
+Searching with:GET https://bibles.org/v2/versions.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<response>
+  <versions>
+    <version id="eng-CEV">
+      <id>eng-CEV</id>
+      <name>Contemporary English Version (US Version)</name>
+      <lang>eng-US</lang>
+      <lang_code>ISO 639-3</lang_code>
+      <copyright><![CDATA[<p>Contemporary English Version® © 1995 American Bible Society.  All rights reserved.</p>
+<p>Bible text from the Contemporary English Version (CEV) is not to be reproduced in copies or otherwise by any means except as permitted in writing by American Bible Society, 1865 Broadway, New York, NY 10023 (<a href="http://www.americanbible.org/">www.americanbible.org</a>).</p>]]></copyright>
+      <info><![CDATA[<h1>About this Title</h1> <p>Uncompromising simplicity marked the American Bible Society's translation of the Contemporary English Version Bible that was first published in 1995. The text is easily read by grade schoolers, second language readers, and those who prefer the more contemporized form. The CEV is not a paraphrase. It is an accurate and faithful translation of the original manuscripts.</p> <h2>Copyright Information</h2> <p>Scriptures marked as "(CEV)" are taken from the Contemporary English Version Copyright © 1995 by American Bible Society. Used by permission.</p> <p>The text of the Contemporary English Version (CEV) appearing on or deriving from this or any other web page is for personal use only. The CEV text may be quoted in any form (written, visual, electronic or audio) up to & inclusive of five hundred (500) verses without written permission, providing the verses quoted do not amount to fifty percent (50%) of a complete book of the Bible nor do the verses account for twenty-five percent (25%) or more of the total text of the work in which they are quoted.</p> <p>This permission is contingent upon an appropriate copyright acknowledgement. Any use of the CEV shall be governed by above policy and shall be solely restricted to noncommercial, personal study purposes.</p> <p>For any other use, please address your inquiries to the American Bible Society, 1865 Broadway, New York, NY 10023, Attn Permissions Dept;</p> <p>CEV Home: http: <a href="http://www.americanbible.org/">www.americanbible.org</a> </p>]]></info>
+      <contact_url>http://www.americanbible.org/</contact_url>
+      <lang_name>English (US)</lang_name>
+      <lang_name_eng>English</lang_name_eng>
+      <abbreviation>CEV</abbreviation>
+      <updated_at>2013-06-26T12:29:12-05:00</updated_at>
+    </version>
+    <version id="eng-CEVUK">
+      <id>eng-CEVUK</id>
+      <name>Contemporary English Version (Anglicised Version)</name>
+      <lang>eng-GB</lang>
+      <lang_code>ISO 639-3</lang_code>
+      <copyright><![CDATA[<p>Contemporary English Version. Copyright © 1995 British & Foreign Bible Society. Used by permission.</p>]]></copyright>
+      <info><![CDATA[<h1>Contemporary English Version (Anglicised Version)</h1>
+<p>This translation, published by the British & Foreign Bible Society, was first published in 1995.</p>
+<p>If you are interested in obtaining a printed copy, please contact the British & Foreign Bible Society at <a href=" http://shop.biblesociety.org.uk/"> http://shop.biblesociety.org.uk</a>.</p>.]]></info>
+      <contact_url>http://www.biblesociety.org.uk/</contact_url>
+      <lang_name>English (British)</lang_name>
+      <lang_name_eng>English</lang_name_eng>
+      <abbreviation>CEVUK</abbreviation>
+      <updated_at>2013-06-26T12:30:18-05:00</updated_at>
+    </version>
+    <version id="eng-ESV">
+      <id>eng-ESV</id>
+      <name>English Standard Version</name>
+      <lang>eng-US</lang>
+      <lang_code>ISO 639-3</lang_code>
+      <copyright><![CDATA[<p>Scripture quotations marked (ESV) are from The Holy Bible, English Standard Version®, copyright © 2001 by Crossway Bibles, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.</p>]]></copyright>
+      <info><![CDATA[<h1>English Standard Version</h1>
+<h3>Version Information</h3>
+<p>Published in 2001, the English Standard Version stands firmly in the King James tradition and is based directly on the 1971 Revised Standard Version (RSV).</p>]]></info>
+      <contact_url>http://www.crossway.org</contact_url>
+      <lang_name>English (US)</lang_name>
+      <lang_name_eng>English</lang_name_eng>
+      <abbreviation>ESV</abbreviation>
+      <updated_at>2013-04-22T11:26:11-05:00</updated_at>
+    </version>
+    [... Versions removed for brevity ...]
+  </versions>
+  <meta>
+    <fums><![CDATA[<script>
+var _BAPI=_BAPI||{};
+if(typeof(_BAPI.t)==='undefined'){
+document.write('\x3Cscript src="'+document.location.protocol+'//d2ue49q0mum86x.cloudfront.net/include/fums.c.js"\x3E\x3C/script\x3E');}
+document.write("\x3Cscript\x3E_BAPI.t('516f31a04617f4.76022510');\x3C/script\x3E");
+</script><noscript><img src="https://d3a2okcloueqyx.cloudfront.net/nf1?t=516f31a04617f4.76022510" height="1" width="1" border="0" alt="" style="height: 0; width: 0;" /></noscript>]]></fums>
+    <fums_tid>516f31a04617f4.76022510</fums_tid>
+    <fums_js_include>d2ue49q0mum86x.cloudfront.net/include/fums.c.js</fums_js_include>
+    <fums_js><![CDATA[var _BAPI=_BAPI||{};if(typeof(_BAPI.t)!='undefined'){ _BAPI.t('516f31a04617f4.76022510'); }]]></fums_js>
+    <fums_noscript><![CDATA[<img src="https://d3a2okcloueqyx.cloudfront.net/nf1?t=516f31a04617f4.76022510" height="1" width="1" border="0" alt="" style="height: 0; width: 0;" />]]></fums_noscript>
+  </meta>
+</response>
