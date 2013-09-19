@@ -4,17 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome to Cuisine Made Easy</title>
+<link href="css/global.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim for IE backwards compatibility -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    
 </head>
 
 <body>
 
 
+<!-- Controls the margin and search button features for the modal that is still a work in progress-->
+
+<div id="wrapper">
 <nav class="navbar navbar-inverse">
 	<div class="navbar-inner">
 		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -23,30 +29,24 @@
 			<span class="icon-bar"></span>
 		</a>
 	<a class="brand" href="#">Recipe's for me"</a>
-	<!--	<div class="nav-collapse">
-    <ul class="nav">
-      <li class="active"><a href="#">Home</a> </li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Class Schedule <span class="caret"></span></a>
-      	<ul class="dropdown-menu">
-        	<li><a href="#">Week One - Cutlery</a></li>
-            <li><a href="#">Week Two - Chopping</a></li>
-            <li><a href="#">Week Three - Seasoning</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Contact Us</a></li>
-          </ul>
-	</div>
-	</div> -->
+	
 </nav>
 
   <div class="row">	
    <div class="col-lg-6 pull-right">
     <div class="input-group">
-      <input type="text" class="form-control pull-right" placeholder="Enter Recipe!!">
+      <!--<input type="text" class="form-control pull-right" placeholder="Enter Recipe!!">
       <span class="input-group-btn">
         <p><a href="#launch1" class="btn btn-success btn-small" data-toggle="modal">Search</a></p>
+        -->
+<form class="keywords" action="http://api.yummly.com/v1/api/recipes?q_app_id=05be4456&_app_key=6c62bf081decd53a0904518503e507b7">
+<div class="input-append">
+<input id="q" type="text" value="" placeholder="Enter Recipe!!" name="q">
+<button type="submit" class="btn btn-info">Search</button>
+</div>
+
+<!-- Section where the modal will pop up and show the recipe that the user is searching for -->
+<!--
 <section id="launch1" class="modal hide fade">
   <header class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -58,7 +58,7 @@
   <footer class="modal-footer">
     <button class="btn btn-primary" data-dismiss="modal">Close</button>
   </footer>
-</section>	
+</section>	-->
 
       </span>
     </div><!-- /input-group -->
@@ -66,10 +66,13 @@
 </div><!-- /.row -->
 		
 
+
+<!--Section that controls the carousel feature with images -->
+
 	<div class="carousel slide" id="artists">
 	<div class="carousel-inner">
 	<div class="item active">	
-      <img src="img/logo-design2.jpg" class="img-rounded" alt="Welcome Screen">
+      <img src="img/NewArt0.jpg" class="img-rounded" alt="Welcome Screen">
       <div class="carousel-caption">
         <h4>Welcome to Recipe's for me</h4>
         <p>This site is to help you find <em>Tasty Recipes and Ingredients.</em> </p>
@@ -77,26 +80,29 @@
 	  </div>	
 	
 	  <div class="item ">	
-      <img src="img/BlankPic.jpg" class="img-rounded" alt="Rosemary Lamb Chops. ">
+      <img src="img/NewArt1.jpg" class="img-rounded" alt="Kate Middleton's Sticky Toffee Pudding. ">
       <div class="carousel-caption">
-        <h4>Sample 1</h4>
-        <p>Info </p>
+        <h4>Kate Middleton's Sticky Toffee Pudding</h4>
+        <p>Recipe by
+           PEOPLE Magazine</p>
       </div>
 	  </div>
 	  
 	  <div class="item">
-	  <img src="img/BlankPic.jpg" class="img-rounded" alt="Sea Kebabs.">
+	  <img src="img/NewArt2.jpg" class="img-rounded" alt="Chipotle Popcorn Chicken Recipe.">
       <div class="carousel-caption">
-        <h4>Sample 2</h4>
-        <p>Info</p>
+        <h4>Chipotle Popcorn Chicken Reciper</h4>
+        <p>Recipe by
+           Food Republic</p>
 	  </div>
 	  </div>
 	  
 	  <div class="item">
-	  <img src="img/BlankPic.jpg" class="img-rounded" alt="Grilled Peppers and Sausage with Cheese Grits.">
+	  <img src="img/NewArt3.jpg" class="img-rounded" alt="Baked Spaghetti Squash with Garlic and Butter.">
       <div class="carousel-caption">
-        <h4>Sample 3</h4>
-        <p>Info</p>
+        <h4>Baked Spaghetti Squash with Garlic and Butter</h4>
+        <p>Recipe by
+		   Steamy Kitchen</p>
 	  </div>
 	  </div>
 	</div>
@@ -104,20 +110,51 @@
   <a href="#artists" class="left carousel-control" data-slide="prev">&lsaquo;</a> 
   <a href="#artists" class="right carousel-control" data-slide="next">&rsaquo;</a> 
 	</div>
+
+
+<!--Section that controls the recipes of the day complete with picture, ingredients and cooking directions -->
+
+<nav class="navbar navbar-pills">
+	<div class="navbar-inner">
+		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			
+		</a>
+	<a class="brand" href="#">Recipe's of the Day</a>
+	
+</nav>
 		
 		<div class="row-fluid">
 			<ul class="thumbnails">
 				<li class="span4">
 					<article class="thumnail">
-						<img src="img/BlankPic.jpg" class="img-rounded" alt="Vegetable Burgers." />
-						<p><a href="#launch0" class="btn btn-warning btn-large" data-toggle="modal">Show More!</a></p>
+						<img src="img/art24.jpg" class="img-rounded" alt="Oven Roasted Root Vegetables." />
+						<p><a href="#launch0" class="btn btn-warning btn-medium" data-toggle="modal">Show More!</a></p>
 <section id="launch0" class="modal hide fade">
   <header class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h3>Picture of Recipe</h3>
+    <img src="img/art24.jpg"/>
+    <h3>Oven Roasted Root Vegetables</h3>
   </header>
   <div class="modal-body">
-  						<p>Recipe Information to go here</p>
+  						<p>
+Ingredients
+
+    1 lb red beets (golden trimmed and scrubbed)
+    1 butternut squash (peeled and seeded)
+    1 yam (peeled)
+    1 parsnip (peeled)
+    1 carrot (peeled)
+    1/2 red onion
+    7 whole garlic cloves
+    3 tbsps thyme leaves (fresh)
+    3 tbsps extra virgin olive oil
+    salt
+    pepper
+
+</p><p>Directions
+	Preheat oven to 425 degrees F. Line a cookie sheet with foil. Cut vegetables into 1 ½ inch chunks. Toss vegetables in a large bowl with garlic cloves, thyme leaves, and 3 tbsp olive oil till evenly coated. Spread vegetables out evenly on the cookie sheet in a single layer. Sprinkle vegetables generously with salt and lots of black pepper.
+Roast the vegetables in the hot oven for about 45 minutes, stirring once halfway through cooking, until vegetables are tender and starting to turn golden. Serve hot.
+</p>
   </div>
   <footer class="modal-footer">
     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -129,36 +166,71 @@
 				
 				<li class="span4">
 					<article class="thumnail">
-						<img src="img/BlankPic.jpg" class="img-rounded" alt="Spicy Backyard Barbecue Chicken Fajitas." />
-						<p><a href="#launch1" class="btn btn-warning btn-large" data-toggle="modal">Show More!</a></p>
-<section id="launch1" class="modal hide fade">
-  <header class="modal-header">
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h3>Picture of Recipe</h3>
-  </header>
-  <div class="modal-body">
-  						<p>Recipe Information to go here</p>
-  </div>
-  <footer class="modal-footer">
-    <button class="btn btn-primary" data-dismiss="modal">Close</button>
-  </footer>
-</section>	
-
-					</article>
-				</li>
-				
-				<li class="span4">
-					<article class="thumnail">
-						<img src="img/BlankPic.jpg" class="img-rounded" alt="Melon and Strawberry Salad with Spicy Lemongrass Syrup." />
-						<p><a href="#launch2" class="btn btn-warning btn-large" data-toggle="modal">Show More!</a></p>
+						<img src="img/art27.jpg" class="img-rounded" alt="Slow Cooker Chicken and Dumplings." />
+						<p><a href="#launch2" class="btn btn-warning btn-medium" data-toggle="modal">Show More!</a></p>
 <section id="launch2" class="modal hide fade">
   <header class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h3>Picture of Recipe</h3>
+    <img src="img/art27.jpg"/>
+    <h3>Slow Cooker Chicken and Dumplings</h3>
   </header>
   <div class="modal-body">
-  						<p>Recipe Information to go here</p>
+  						<p>
+Ingredients
+
+    4 boneless skinless chicken breast halves
+    2 tbsps butter
+    ? Tasty tip
+    211/2 ozs condensed cream of chicken soup
+    1 onion (finely diced)
+    20 ozs biscuit dough (refrigerated, torn into pieces)
+
+</p><p>Directions
+
+    Place the chicken, butter, soup, and onion in a slow cooker, and fill with enough water to cover.
+    Cover, and cook for 5 to 6 hours on High. About 30 minutes before serving, place the torn biscuit dough in the slow cooker. Cook until the dough is no longer raw in the center.
+</p>
   </div>
+  <footer class="modal-footer">
+    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+  </footer>
+</section>
+					</article>
+				</li>
+					</article>
+				</li>
+				
+				<li class="span4">
+					<article class="thumnail">
+						<img src="img/art29.jpg" class="img-rounded" alt="Honey Garlic Chicken Slow Cooker." />
+						<p><a href="#launch3" class="btn btn-warning btn-medium" data-toggle="modal">Show More!</a></p>
+<section id="launch3" class="modal hide fade">
+  <header class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <img src="img/art29.jpg"/>
+    <h3>Honey Garlic Chicken Slow Cooker</h3>
+  </header>
+  <div class="modal-body">
+  						<p>
+Ingredients
+
+    13/4 lbs boneless skinless chicken thighs (4 or one thigh per family member)
+    3 garlic cloves (smashed and chopped)
+    1 tsp dried basil
+    1/2 cup soy sauce (La Choy or Tamari wheat-free are gluten free)
+    1/2 cup ketchup
+    1/3 cup honey
+</p>
+<p>The Directions.
+
+Use a 4-quart slow cooker (if using a 6-quart, this will cook faster. Check after 3 hours on high, 5 hours on low).
+Put the chicken into your cooker. In a small bowl, combine the rest of the ingredients, then pour evenly over the top.
+Cook on low for 6 hours or high for 3-4 (I'd go with low---).
+Serve with basmati rice and steamed or roasted vegetables.</p>
+  </div>
+  
+  <!--footer, scripts for .js files -->
+  
   <footer class="modal-footer">
     <button class="btn btn-primary" data-dismiss="modal">Close</button>
   </footer>
@@ -168,7 +240,7 @@
 
 			</ul>		 
 	</div>		
-
+</div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

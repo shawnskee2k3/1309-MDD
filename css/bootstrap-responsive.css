@@ -1107,3 +1107,8 @@
     overflow: visible !important;
   }
 }
+@media (max-width: 1023px) {
+  #wrapper {
+	width: 100%;
+  } 
+}
