@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<script src="GET http://api.yummly.com/v1/api/recipes?q_app_id=05be4456&_app_key=6c62bf081decd53a0904518503e507b7"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome to Cuisine Made Easy</title>
@@ -16,6 +17,7 @@
 </head>
 
 <body>
+
 
 
 <!-- Controls the margin and search button features for the modal that is still a work in progress-->
@@ -39,10 +41,11 @@
       <span class="input-group-btn">
         <p><a href="#launch1" class="btn btn-success btn-small" data-toggle="modal">Search</a></p>
         -->
-<form class="keywords" action="http://api.yummly.com/v1/api/recipes?q_app_id=05be4456&_app_key=6c62bf081decd53a0904518503e507b7">
+<form class="keywords">
 <div class="input-append">
 <input id="q" type="text" value="" placeholder="Enter Recipe!!" name="q">
-<button type="submit" class="btn btn-info">Search</button>
+<a href="http://api.yummly.com/v1/api/recipes?_app_id=05be4456&_app_key=6c62bf081decd53a0904518503e507b7&q=chicken breast"class="btn btn-success btn-medium"  >Search!</a></p>
+
 </div>
 
 <!-- Section where the modal will pop up and show the recipe that the user is searching for -->
@@ -230,6 +233,7 @@ Serve with basmati rice and steamed or roasted vegetables.</p>
   </div>
   
   <!--footer, scripts for .js files -->
+  <!--file structure for parsed informaton pulled from yummly api-->
   
   <footer class="modal-footer">
     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -241,7 +245,31 @@ Serve with basmati rice and steamed or roasted vegetables.</p>
 			</ul>		 
 	</div>		
 </div>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<div id="footer">
+	<p align="center">Developed for Mobile Device Deployment Class 1309. Copyright 2013 &copy; Solomon Amos</p>
+	</div>
+
+<script>
+			<div id="Content">
+			    {{#each Recipes}}
+			  	<div class='Box'>
+				  	<img class='Thumb' src="{{{Image}}}" alt="{{Name}}">
+				  	<h3>{{Name}} <a id='Logo' href="{{Source.Url}}"> - {{Source.Name}}</a></h3>
+				  	<h5>{{getFlavor Flavors}}</h5>
+				  	<h5>{{Yield}}</h5>
+				  	<p>Ingredients:</p>
+				  	<ul>
+				  		{{#each Ingredients}}
+				  			<li>{{this}}</li>
+				  		{{/each}}
+				  	</ul>
+			  	</div>
+			  {{/each}}
+			</div>
+		</script>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
